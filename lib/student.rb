@@ -6,8 +6,9 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id
 
-  def initialize(students_hash, id = nil)
-    students_hash.each{|key, value| self.send(("#{key}="), value)}
+  def initialize(name, grade, id = nil)
+    @name = name
+    @grade = grade
     @id = id
   end
 
