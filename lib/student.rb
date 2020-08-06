@@ -47,7 +47,7 @@ class Student
 
   def self.create(students_hash)
     students_data = []
-    students_hash.each{}
+    students_hash.each{|key, value| students_data << value}
     student = Student.new(name, album)
     student.save
     student
