@@ -45,7 +45,9 @@ class Student
 
   end
 
-  def self.create(name, grade)
+  def self.create(students_hash)
+    students_data = []
+    students_hash.each{}
     student = Student.new(name, album)
     student.save
     student
