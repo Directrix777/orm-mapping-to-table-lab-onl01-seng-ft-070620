@@ -41,7 +41,7 @@ class Student
       SELECT id FROM students WHERE name = ?
     SQL
 
-    @id = DB[:conn].execute(sql, self.name).flatten.flatten
+    @id = DB[:conn].execute(sql, self.name).flatten[0]
 
   end
 
